@@ -10,8 +10,6 @@ public class Drinks
     // instance variables - replace the example below with your own
     private String drink;
     private boolean isDrunk;
-    private String s;
-    private String t;
 
     /**
      * Constructor for objects of class Drinks
@@ -20,8 +18,6 @@ public class Drinks
     {
         // initialise instance variables
         this.drink = drink;
-        this.s = s;
-        this.t = t;
         this.isDrunk = isDrunk;
     }
 
@@ -33,7 +29,7 @@ public class Drinks
     {
         System.out.println("Have you finished your " + drink + "?");
         Scanner answer = new Scanner(System.in);
-        s = answer.nextLine();
+        String s = answer.nextLine();
 
         if(s.equals("Yes"))
         {
@@ -50,7 +46,7 @@ public class Drinks
     {
         System.out.println("Would you like a refill?");
         Scanner secondAnswer = new Scanner(System.in);
-        t = secondAnswer.nextLine();
+        String t = secondAnswer.nextLine();
 
         if(t.equals("Yes"))
         {
